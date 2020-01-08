@@ -1,0 +1,15 @@
+{
+  "name": "create-commerce-app",
+  "version": "0.0.0",
+  "description": "A commerce cloud application generator",
+  "homepage": "",
+  "author": {
+    "name": "Gaurav Khunger",
+    "email": "gkhunger@salesforce.com",
+    "url": ""
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "private": true
+}
