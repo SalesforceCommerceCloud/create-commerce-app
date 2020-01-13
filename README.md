@@ -1,2 +1,2 @@
 # create-commerce-app
-A commerce cloud application generator
+A commerce cloud application generator.
