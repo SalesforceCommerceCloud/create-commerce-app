@@ -4,7 +4,7 @@ A Salesforce Commerce application generator that allows you to generate a sample
 ## Prerequisites
 Download and install Node.js and npm [here](https://nodejs.org/en/download/).
 ​
-> **Note:** Only Node.js version 10 is supported. A version other than version 10 can cause unexpected results. To use a different version of Node.js for other projects, you can manage multiple versions of Node.js with [nvm](https://github.com/nvm-sh/nvm).
+> **Note:** Only Node.js versions 10 LTS and 12 LTS are supported. Any other versions can cause unexpected results. To use a different version of Node.js for other projects, you can manage multiple versions of Node.js with [nvm](https://github.com/nvm-sh/nvm).
 
 ## Quick Start
 

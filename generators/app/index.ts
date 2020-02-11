@@ -26,8 +26,7 @@ class CreateGenerator extends Generator {
 
     async writing() {
         // Clone the sample apps repo
-        await git().clone(this.gitRepo, this.destPath)
-            .catch(console.log);
+        await git().clone(this.gitRepo, this.destPath);
 
         // Remove the .git directory so that the user can start their git 
         // history from scratch

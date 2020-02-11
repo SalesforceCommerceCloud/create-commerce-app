@@ -30,7 +30,7 @@ class CreateCommerceApp extends Command {
    * current directory with the argument passed for appName.
    * 
    */
-  async run() {
+  run() {
     const { args } = this.parse(CreateCommerceApp)
     const appName = args.appName;
     const env = createEnv();
@@ -39,20 +39,21 @@ class CreateCommerceApp extends Command {
       require.resolve('../generators/app'),
       'CreateGenerator'
     )
-
-    await new Promise((resolve, reject) => {
+  
+    // converting the callback into a promise
+    return new Promise((resolve, reject) => {
       env.run(
         'CreateGenerator',
-        { 
-          name: appName, 
-          gitRepoUrl: SAMPLE_APPS_GIT_REPO_URL, 
-          force: true 
+        {
+          name: appName,
+          gitRepoUrl: SAMPLE_APPS_GIT_REPO_URL,
+          force: true
         },
         (err: null | Error) => {
           if (err) {
             reject(err);
           } else {
-            resolve()
+            resolve();
           }
         }
       )
