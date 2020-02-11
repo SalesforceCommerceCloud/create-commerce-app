@@ -3,15 +3,8 @@ import { expect, test } from '@oclif/test'
 import cmd = require('../src')
 
 describe('Create commerce app cli', () => {
-  const appName = "test-app";
-  test
-    .stdout()
-    .do(() => cmd.run(['test-app']))
-    .it('runs with appname', ctx => {
-      expect(ctx.stdout).to.contain(`This will soon create a sample commerce app named ${appName}`)
-    })
-
   const argName = "appName";
+  
   test
     .stdout()
     .do(() => cmd.run([]))
