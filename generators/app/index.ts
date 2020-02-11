@@ -3,8 +3,12 @@ import * as path from 'path'
 import * as git from 'simple-git/promise'
 import * as fs from 'fs-extra'
 
-import { MESSAGE_PROJECT_CREATED, SAMPLE_APPS_GIT_REPO_URL } from '../../src/constants'
+import { MESSAGE_PROJECT_CREATED } from '../../src/constants'
 
+/**
+ * Yeoman generator responsible for cloning the git repo associated with the
+ * git url passed as gitRepoUrl option.
+ */
 class CreateGenerator extends Generator {
     pjson: any
     destPath: string

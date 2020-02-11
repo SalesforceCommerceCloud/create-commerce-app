@@ -14,7 +14,7 @@ To get up and running execute the following command in a shell/terminal:
 npx create-commerce-app your-app-name
 ```
 
-This will run a npx installation of create-commerce-app and create a sample Salesforce Commerce app for you.
+This will run a npx installation of create-commerce-app and create a sample Salesforce Commerce Storefront app for you. It creates the app as a sub-directory of the current working directory with the name of the directory being the app name provided while running the above command. More information about the sample Salesforce Commerce Storefront app and how to use it can be found [here](https://github.com/SalesforceCommerceCloud/sfcc-sample-apps)
 
 ## Setup
 
