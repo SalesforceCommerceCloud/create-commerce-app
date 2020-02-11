@@ -1,5 +1,6 @@
 import { Command, flags } from '@oclif/command'
 import { createEnv } from 'yeoman-environment'
+import { SAMPLE_APPS_GIT_REPO_URL } from './constants'
 
 /**
  * CreateCommerceApp command allows creating a sample commerce app with name of
@@ -42,7 +43,11 @@ class CreateCommerceApp extends Command {
     await new Promise((resolve, reject) => {
       env.run(
         'CreateGenerator',
-        { name: appName, force: true },
+        { 
+          name: appName, 
+          gitRepoUrl: SAMPLE_APPS_GIT_REPO_URL, 
+          force: true 
+        },
         (err: null | Error) => {
           if (err) {
             reject(err);

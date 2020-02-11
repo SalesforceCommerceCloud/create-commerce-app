@@ -17,6 +17,7 @@
     "@types/yeoman-environment": "^2.3.2",
     "@types/yeoman-generator": "^3.1.4",
     "@types/yeoman-test": "^2.0.3",
+    "@types/tmp": "^0.1.0",
     "yeoman-assert": "^3.1.0",
     "yeoman-environment": "^2.7.0",
     "yeoman-generator": "^4.4.0",
@@ -37,7 +38,8 @@
     "mocha": "^5.2.0",
     "nyc": "^14.1.1",
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "tmp": "^0.1.0"
   },
   "engines": {
     "node": ">=8.0.0"

@@ -8,19 +8,25 @@ import { MESSAGE_PROJECT_CREATED, SAMPLE_APPS_GIT_REPO_URL } from '../../src/con
 class CreateGenerator extends Generator {
     pjson: any
     destPath: string
+    gitRepo: string
 
     constructor(args: any, opts: any) {
         super(args, opts);
         if (!opts.name) {
             this.env.error(new Error("missing required option: name"));
         }
+        if (!opts.gitRepoUrl) {
+            this.env.error(new Error("missing required option: gitRepo"));
+        }
+
+        this.gitRepo = opts.gitRepoUrl;
         this.pjson = { name: opts.name };
         this.destPath = path.resolve(opts.name);
     }
 
     async writing() {
         // Clone the sample apps repo
-        await git().clone(SAMPLE_APPS_GIT_REPO_URL, this.destPath)
+        await git().clone(this.gitRepo, this.destPath)
             .catch(console.log);
 
         // Remove the .git directory so that the user can start their git 
