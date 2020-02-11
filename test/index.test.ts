@@ -8,7 +8,7 @@ describe('Create commerce app cli', () => {
     .stdout()
     .do(() => cmd.run(['test-app']))
     .it('runs with appname', ctx => {
-      expect(ctx.stdout).to.contain(`This will soon create a sample commerce app named ${appName}`)
+      expect(ctx.stdout).to.contain(`Created ${appName}`)
     })
 
   const argName = "appName";
