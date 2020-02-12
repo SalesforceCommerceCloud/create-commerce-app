@@ -4,8 +4,8 @@
   "license": "BSD-3-Clause",
   "description": "A commerce cloud application generator",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/SalesforceCommerceCloud/create-commerce-app"
+    "type": "git",
+    "url": "https://github.com/SalesforceCommerceCloud/create-commerce-app"
   },
   "bin": "./bin/run",
   "bugs": "https://github.com/create-commerce-app/issues",

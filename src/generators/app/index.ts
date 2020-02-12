@@ -3,7 +3,7 @@ import * as path from 'path'
 import * as git from 'simple-git/promise'
 import * as fs from 'fs-extra'
 
-import { MESSAGE_PROJECT_CREATED } from '../../src/constants'
+import { MESSAGE_PROJECT_CREATED } from '../../constants'
 
 /**
  * Yeoman generator responsible for cloning the git repo associated with the
