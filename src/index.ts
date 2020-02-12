@@ -36,7 +36,7 @@ class CreateCommerceApp extends Command {
     const env = createEnv();
 
     env.register(
-      require.resolve('../generators/app'),
+      require.resolve('./generators/app'),
       'CreateGenerator'
     )
   

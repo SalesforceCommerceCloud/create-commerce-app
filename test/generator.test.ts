@@ -16,7 +16,7 @@ describe('CreateGenerator', () => {
     await git(tmpGitRepo).init()
       .catch(console.log);
 
-    return helpers.run(path.join(__dirname, '../generators/app'))
+    return helpers.run(path.join(__dirname, '../src/generators/app'))
       .withOptions({ name: appName, gitRepoUrl: tmpGitRepo });
   });
 
