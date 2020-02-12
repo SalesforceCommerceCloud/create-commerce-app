@@ -35,5 +35,13 @@ To print the detailed test results and errors on the console, execute
 npm run test:debug
 ```
 
+## Issues
+
+First, check the [open issues](https://github.com/SalesforceCommerceCloud/create-commerce-app/issues and [Commerce Cloud Developer Center](https://developer.commercecloud.com/) for any open issues related to the issue that you are experiencing. If not already raised please file a new issue [here](https://github.com/SalesforceCommerceCloud/create-commerce-app/issues/new) with all the necessary details. If you require an urgent resolution to your issue please ask your AM/CSM to file a support ticket with Salesforce Commerce.
+
+## Contributing
+
+If you would like to contribute please take a look at our [contributors' guide](./Contributing.md).
+
 ## License Information
 This package is licensed under BSD-3-Clause license. See the [license](./LICENSE.txt) for details.
