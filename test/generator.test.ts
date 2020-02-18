@@ -10,11 +10,22 @@ describe('CreateGenerator', () => {
 
   before(async () => {
     const tmpGitRepo = tmp.dirSync().name;
-
-    fs.writeFileSync(`${tmpGitRepo}/package.json`, '{"name: "test"}');
+    fs.writeFileSync(`${tmpGitRepo}/package.json`, '{"name": "test"}');
 
     await git(tmpGitRepo).init()
-      .catch(console.log);
+      .catch(console.error.bind(console));
+
+    await git(tmpGitRepo).addConfig('user.name', 'Some one')
+      .catch(console.error.bind(console));
+
+    await git(tmpGitRepo).addConfig('user.email', 'some@one.com')
+      .catch(console.error.bind(console));
+
+    await git(tmpGitRepo).add('./*')
+      .catch(console.error.bind(console));
+
+    await git(tmpGitRepo).commit('First commit')
+      .catch(console.error.bind(console));
 
     return helpers.run(path.join(__dirname, '../src/generators/app'))
       .withOptions({ name: appName, gitRepoUrl: tmpGitRepo });
