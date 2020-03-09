@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "license": "BSD-3-Clause",
   "description": "A commerce cloud application generator",
+  "homepage": "https://developer.commercecloud.com/s/",
   "repository": {
     "type": "git",
     "url": "https://github.com/SalesforceCommerceCloud/create-commerce-app"
