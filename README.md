@@ -1,10 +1,10 @@
 # create-commerce-app
-A Salesforce Commerce application generator that allows you to generate a sample commerce storefront application.
+A Salesforce Commerce application generator that allows you to generate a sample commerce storefront application. It installs the sfcc-sample-apps applications as a new application without having to clone this repository or the sfcc-sample-apps repository. 
 
 ## Prerequisites
-Download and install Node.js and npm [here](https://nodejs.org/en/download/).
+Download and install [Node.js v12](https://nodejs.org/en/download/). 
 ​
-> **Note:** Only Node.js 12 LTS is supported. Any other version can cause unexpected results. To use a different version of Node.js for other projects, you can manage multiple versions of Node.js with [nvm](https://github.com/nvm-sh/nvm).
+> **Note:** Only Node.js v12 is supported. Any other version can cause unexpected results. To use a different version of Node.js for other projects, you can manage multiple versions of Node.js with [nvm](https://github.com/nvm-sh/nvm).
 
 ## Quick Start
 
@@ -14,15 +14,11 @@ To get up and running execute the following command in a shell/terminal:
 npx create-commerce-app your-app-name
 ```
 
-This will run a npx installation of create-commerce-app and create a sample Salesforce Commerce Storefront app for you. It creates the app as a sub-directory of the current working directory with the name of the directory being the app name provided while running the above command. More information about the sample Salesforce Commerce Storefront app and how to use it can be found [here](https://github.com/SalesforceCommerceCloud/sfcc-sample-apps)
+This will run a npx installation of create-commerce-app and create a sample Salesforce Commerce Storefront app for you. It creates the app as a sub-directory of the current working directory with the name of the directory being the your-app-name provided while running the above command. More information about the sample Salesforce Commerce Storefront app and how to use it can be found [here](https://github.com/SalesforceCommerceCloud/sfcc-sample-apps)
 
 ## Setup
 
-Execute the following commands to install dependencies and build create-commerce-app locally.
-
-```bash
-npm install
-```
+Follow the sample apps setup at https://github.com/SalesforceCommerceCloud/sfcc-sample-apps#setup. Start from step 3 which creates an api.mjs file.  Follow the setup through the end.
 
 ## Testing
 
