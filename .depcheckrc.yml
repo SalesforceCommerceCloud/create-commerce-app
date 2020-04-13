@@ -1,4 +1,5 @@
 ignores: [
+  "chai",
   "depcheck",
   "eslint*",
   "mocha",
