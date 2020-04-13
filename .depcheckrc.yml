@@ -1,0 +1,9 @@
+ignores: [
+  "depcheck",
+  "eslint*",
+  "mocha",
+  "nyc",
+  "prettier",
+  "tslib",
+  "typescript"
+]
