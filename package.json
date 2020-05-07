@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@oclif/command": "^1.5.19",
-    "@oclif/config": "^1.13.3",
+    "@oclif/config": "^1.15.1",
     "@oclif/plugin-help": "^2.2.3",
     "@types/fs-extra": "^8.0.1",
     "@types/yeoman-environment": "^2.3.2",
