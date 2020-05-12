@@ -30,3 +30,5 @@ patch:
         patched: '2020-05-01T06:47:13.197Z'
     - depcheck > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
         patched: '2020-05-01T06:47:13.197Z'
+    - yeoman-generator > grouped-queue > lodash:
+        patched: '2020-05-11T14:16:37.145Z'
