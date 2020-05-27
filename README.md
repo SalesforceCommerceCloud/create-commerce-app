@@ -16,25 +16,6 @@ npx create-commerce-app your-app-name
 
 This will run a npx installation of create-commerce-app and create a sample Salesforce Commerce Storefront app for you. It creates the app as a sub-directory of the current working directory with the name of the directory being the app name provided while running the above command. In order to run your new application, please follow the instructions for the [sample Salesforce Commerce Storefront app](https://github.com/SalesforceCommerceCloud/sfcc-sample-apps). You don't need to clone the sample apps repo, but you do need to run the yarn commands shown in the root directory of your new commerce app.
 
-## Setup
-
-Execute the following commands to install dependencies and build create-commerce-app locally.
-
-```bash
-npm install
-```
-
-## Testing
-
-To run tests, execute
-```bash
-npm run test
-```
-To print the detailed test results and errors on the console, execute
-```bash
-npm run test:debug
-```
-
 ## Issues
 
 First, check the [open issues](https://github.com/SalesforceCommerceCloud/create-commerce-app/issues) and [Commerce Cloud Developer Center](https://developer.commercecloud.com/) for any open issues related to the issue that you are experiencing. If not already raised please file a new issue [here](https://github.com/SalesforceCommerceCloud/create-commerce-app/issues/new) with all the necessary details. If you require an urgent resolution to your issue please ask your AM/CSM to file a support ticket with Salesforce Commerce.
