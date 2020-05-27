@@ -2,6 +2,25 @@
 
 To contribute to create-commerce-app, follow the guidelines below. This helps us address your pull request in a more timely manner. 
 
+## Setup
+
+Execute the following commands to install dependencies and build create-commerce-app locally.
+
+```bash
+npm install
+```
+
+## Testing
+
+To run tests, execute
+```bash
+npm run test
+```
+To print the detailed test results and errors on the console, execute
+```bash
+npm run test:debug
+```
+
 ## Submitting a Pull Request
 
   1. Create a new issue. It allows us to easily communicate with you about the issue.
@@ -31,4 +50,4 @@ As long as your submission has met the above guidelines, we should merge it in a
  
 ## Contributor License Agreement (CLA)
 
-All external contributors must sign our Contributor License Agreement (CLA).  
+All external contributors must sign our Contributor License Agreement (CLA).
