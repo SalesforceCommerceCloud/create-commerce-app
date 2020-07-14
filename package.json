@@ -31,7 +31,7 @@
     "simple-git": "1.132.0",
     "snyk": "^1.320.2",
     "tslib": "^1.11.1",
-    "yeoman-environment": "^2.9.6",
+    "yeoman-environment": "^2.10.3",
     "yeoman-generator": "^4.8.2"
   },
   "devDependencies": {
