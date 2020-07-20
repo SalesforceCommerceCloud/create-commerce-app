@@ -27,7 +27,7 @@
     "@types/yeoman-environment": "^2.3.3",
     "@types/yeoman-generator": "^3.1.4",
     "depcheck": "^0.9.2",
-    "fs-extra": "^9.0.0",
+    "fs-extra": "^9.0.1",
     "simple-git": "1.132.0",
     "snyk": "^1.347.1",
     "tslib": "^1.11.1",
