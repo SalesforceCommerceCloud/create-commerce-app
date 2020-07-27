@@ -22,7 +22,6 @@
   "dependencies": {
     "@oclif/command": "^1.6.1",
     "@oclif/config": "^1.16.0",
-    "@oclif/plugin-help": "^2.2.3",
     "@types/fs-extra": "^8.1.0",
     "@types/yeoman-environment": "^2.3.3",
     "@types/yeoman-generator": "^3.1.4",
