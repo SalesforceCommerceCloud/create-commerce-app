@@ -49,7 +49,7 @@
     "nyc": "^14.1.1",
     "tmp": "^0.1.0",
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.5",
+    "typescript": "^3.9.7",
     "yeoman-assert": "^3.1.0",
     "yeoman-test": "^1.7.0"
   },
