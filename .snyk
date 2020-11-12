@@ -1,6 +1,14 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.14.1
-ignore: {}
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-AXIOS-1038255:
+    - yeoman-environment > npm-api > paged-request > axios:
+        reason: no remediation available
+        expires: '2020-12-12T16:21:05.355Z'
+    - yeoman-generator > yeoman-environment > npm-api > paged-request > axios:
+        reason: no remediation available
+        expires: '2020-12-12T16:21:05.355Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-LODASH-567746:
