@@ -20,7 +20,7 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "@oclif/command": "^1.6.1",
+    "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.16.0",
     "@types/fs-extra": "^8.1.0",
     "@types/yeoman-environment": "^2.10.2",
@@ -29,9 +29,9 @@
     "fs-extra": "^9.0.1",
     "simple-git": "1.132.0",
     "snyk": "^1.355.0",
-    "tslib": "^1.11.1",
+    "tslib": "^1.14.1",
     "yeoman-environment": "^2.10.3",
-    "yeoman-generator": "^4.11.0"
+    "yeoman-generator": "^4.12.0"
   },
   "devDependencies": {
     "@oclif/test": "^1.2.5",
