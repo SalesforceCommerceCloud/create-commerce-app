@@ -10,46 +10,49 @@ import { MESSAGE_PROJECT_CREATED } from '../../constants'
  * git url passed as gitRepoUrl option.
  */
 class CreateGenerator extends Generator {
-    pjson: any
-    destPath: string
-    gitRepo: string
+  pjson: any
 
-    constructor(args: any, opts: any) {
-        super(args, opts);
-        if (!opts.name) {
-            this.env.error(new Error("missing required option: name"));
-        }
-        if (!opts.gitRepoUrl) {
-            this.env.error(new Error("missing required option: gitRepo"));
-        }
+  destPath: string
 
-        this.gitRepo = opts.gitRepoUrl;
-        this.pjson = { name: opts.name };
-        this.destPath = path.resolve(opts.name);
+  gitRepo: string
+
+  constructor(args: any, opts: any) {
+    super(args, opts);
+    if (!opts.name) {
+      this.env.error(new Error("missing required option: name"));
+    }
+    if (!opts.gitRepoUrl) {
+      this.env.error(new Error("missing required option: gitRepo"));
     }
 
-    async writing() {
-        // Clone the sample apps repo
-        await git().clone(this.gitRepo, this.destPath, ['-b', 'master']);
+    this.gitRepo = opts.gitRepoUrl;
+    this.pjson = { name: opts.name };
+    this.destPath = path.resolve(opts.name);
+  }
 
-        // Remove the .git directory so that the user can start their git 
-        // history from scratch
-        process.chdir(this.destPath);
-        const gitPath = path.join(this.destPath, '.git');
-        fs.removeSync(gitPath);
+  async writing() {
+    // Clone the sample apps repo
+    await git().clone(this.gitRepo, this.destPath, ['-b', 'master']);
 
-        // Add the user provided details to the app's package.json
-        const pjsonPath = path.join(this.destPath, './package.json');
-        this.fs.extendJSON(pjsonPath, this.pjson);
-    }
+    // Remove the .git directory so that the user can start their git 
+    // history from scratch
+    process.chdir(this.destPath);
+    const gitPath = path.join(this.destPath, '.git');
+    fs.removeSync(gitPath);
 
-    end() {
-        console.log(
-            MESSAGE_PROJECT_CREATED,
-            this.pjson.name,
-            this.destPath
-        )
-    }
+    // Add the user provided details to the app's package.json
+    const pjsonPath = path.join(this.destPath, './package.json');
+    this.fs.extendJSON(pjsonPath, this.pjson);
+  }
+
+  end() {
+    // eslint-disable-next-line no-console
+    console.log(
+      MESSAGE_PROJECT_CREATED,
+      this.pjson.name,
+      this.destPath
+    )
+  }
 }
 
 export = CreateGenerator
