@@ -1,0 +1,10 @@
+{
+  "file": "test/setup.ts",
+  "forbidOnly": true,
+  "require": [
+    "ts-node/register"
+  ],
+  "colors": true,
+  "timeout": 10000,
+  "spec": "\"test/**/*.test.ts\""
+}
