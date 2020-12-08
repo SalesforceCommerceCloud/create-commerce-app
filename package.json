@@ -13,8 +13,8 @@
   "scripts": {
     "depcheck": "depcheck",
     "pretest": "npm run depcheck",
-    "test": "TS_NODE_COMPILER_OPTIONS='{\"rootDir\":\".\"}' nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\" --require ts-node/register --watch-extensions ts --reporter=xunit --reporter-options output=reports/generator.xml --timeout 10000",
-    "test:debug": "TS_NODE_COMPILER_OPTIONS='{\"rootDir\":\".\"}' nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\" --require ts-node/register --watch-extensions ts --timeout 10000",
+    "test:ci": "TS_NODE_COMPILER_OPTIONS='{\"rootDir\":\".\"}' nyc mocha --reporter=xunit --reporter-options output=reports/generator.xml",
+    "test": "mocha",
     "prepack": "tsc",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
@@ -31,7 +31,7 @@
     "snyk": "^1.355.0",
     "tslib": "^1.11.1",
     "yeoman-environment": "^2.10.3",
-    "yeoman-generator": "^4.11.0"
+    "yeoman-generator": "^4.12.0"
   },
   "devDependencies": {
     "@oclif/test": "^1.2.5",
@@ -45,8 +45,9 @@
     "eslint": "^5.16.0",
     "eslint-config-oclif": "^3.1.0",
     "eslint-config-oclif-typescript": "^0.1.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.2.1",
     "nyc": "^14.1.1",
+    "sinon": "^9.2.1",
     "tmp": "^0.1.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.9.7",
