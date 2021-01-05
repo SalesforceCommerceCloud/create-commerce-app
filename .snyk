@@ -5,10 +5,101 @@ ignore:
   SNYK-JS-AXIOS-1038255:
     - yeoman-environment > npm-api > paged-request > axios:
         reason: No remediation available
-        expires: '2020-12-20T20:14:51.853Z'
+        expires: '2021-02-03T18:36:13.304Z'
     - yeoman-generator > yeoman-environment > npm-api > paged-request > axios:
         reason: No remediation available
-        expires: '2020-12-20T20:14:51.853Z'
+        expires: '2021-02-03T18:36:13.304Z'
+  SNYK-JS-CACHEBASE-1054631:
+    - yeoman-environment > globby > fast-glob > micromatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.304Z'
+    - yeoman-environment > globby > fast-glob > micromatch > braces > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.305Z'
+    - yeoman-environment > globby > fast-glob > micromatch > extglob > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.305Z'
+    - yeoman-environment > globby > fast-glob > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.305Z'
+    - yeoman-generator > yeoman-environment > globby > fast-glob > micromatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.305Z'
+    - yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.305Z'
+    - yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-generator > yeoman-environment > globby > fast-glob > micromatch > braces > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > braces > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > braces > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-environment > globby > fast-glob > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-generator > yeoman-environment > globby > fast-glob > micromatch > extglob > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > extglob > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > extglob > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-generator > yeoman-environment > globby > fast-glob > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.306Z'
+    - yeoman-generator > yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-environment > yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-generator > yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > braces > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-environment > yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > braces > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-generator > yeoman-environment > globby > fast-glob > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-generator > yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > extglob > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-environment > yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > extglob > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-generator > yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-environment > yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-generator > yeoman-environment > mem-fs-editor > globby > fast-glob > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.307Z'
+    - yeoman-environment > yeoman-generator > mem-fs-editor > globby > fast-glob > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: No remediation available
+        expires: '2021-02-03T18:36:13.308Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   SNYK-JS-LODASH-567746:
