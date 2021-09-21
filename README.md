@@ -1,4 +1,7 @@
 # create-commerce-app
+
+**This repo has been archived and is no longer in development. Please see https://github.com/SalesforceCommerceCloud/pwa-kit for using Salesforce Commerce APIs to build a headless shopping experience.**
+
 A Salesforce Commerce application generator that allows you to generate a sample commerce storefront application.
 
 ## Prerequisites
